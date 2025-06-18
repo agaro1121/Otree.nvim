@@ -116,7 +116,7 @@ local function configure_window_options()
     winfixwidth = true,
     winfixheight = true,
     foldcolumn = "0",
-    winhl = "Search:None,CurSearch:None,IncSearch:None",
+    -- winhl = "Search:None,CurSearch:None,IncSearch:None", -- revert this if you want to disable highlighting while searching
   }
 
   for opt, value in pairs(win_opts) do
