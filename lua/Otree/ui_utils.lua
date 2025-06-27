@@ -119,7 +119,7 @@ function M.setup_keymaps(buf)
     end
   end
 
-  local close_keys = { "q", "<Esc>" }
+  local close_keys = { "<Esc>" }
   for _, key in ipairs(close_keys) do
     vim.keymap.set("n", key, function()
       local curr_win = vim.api.nvim_get_current_win()
